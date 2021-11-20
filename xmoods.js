@@ -876,11 +876,7 @@ if (budy.includes("๒๒")){
   }, 0)
 }
 
-if (isSimi) {		
-	simi = await fetchJson(`https://api.simsimi.net/v2/?text=${cmd}&lc=ID`)
-                     sami = simi.success
-                        rifza.sendMessage(from, `${sami}`, text, {thumbnail: ppbot, sendEphemeral: true, quoted:wan, contextInfo : {forwardingScore: 508, isForwarded: true}})
-                      }
+
 //=====================================================================
 if (budy.includes("🧙‍♂️𝐀𝐥𝐚𝐤𝐚𝐳𝐚𝐦🔮")){
   if (!isGroup) return
