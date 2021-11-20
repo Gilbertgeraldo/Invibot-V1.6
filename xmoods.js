@@ -1067,7 +1067,7 @@ reply("*「 BACA PERATURAN GC 」Selamat Tinggal Sobat, Lain kali Kalau Ada Masu
       /////***𝙁𝙐𝙉𝘾𝙏𝙄𝙊𝙉 𝘼𝙉𝙏𝙄 𝙇𝙄𝙉𝙆 𝙁𝘼𝘾𝙀𝘽𝙊𝙊𝙆***\\\\\
    if (messagesC.match("://www.mediafire.com")){
    if (!isGroup) return
-   if (!isAntiLinkfb) return
+   if (!isAntiLinkmediafire) return
    if (isGroupAdmins) return reply('*Admin Terdeteksi, Bot Tidak Akan Mengeluarkan Admin Grup, Karena Admin Grup Bebas Mengirimkan Link MediaFire*')
    rifza.updatePresence(from, Presence.composing)
    var kic = `${sender.split("@")[0]}@s.whatsapp.net`
