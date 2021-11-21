@@ -16,7 +16,7 @@
 -------
 <h1 align="center">assalamu'alaikum <img src="https://user-images.githubusercontent.com/1303154/88677602-1635ba80-d120-11ea-84d8-d263ba5fc3c0.gif" width="40px" alt="hi"><br>I'm ridwan😇 </h1>
 <p align="center">
-  <img src="https://telegra.ph/file/f69ab85bda6d741474547.jpg" /></>
+  <img src="https://telegra.ph/file/2089587ce9afe97f24bf1.jpg" /></>
 </p>
 
 - 👼 My name is Wann 
