@@ -260,6 +260,7 @@ module.exports = rifza = async (rifza, riff) => {
 		const ownerNumber = [`${targetpc}@s.whatsapp.net`]
 		const ownerNumberr = `${targetpc}@s.whatsapp.net`      
 		const totalchat = await rifza.chats.all()
+                const senderNumber = sender.split("@")[0]
 		const groupMetadata = isGroup ? await rifza.groupMetadata(from) : ''
 		const groupName = isGroup ? groupMetadata.subject : ''
 		const groupId = isGroup ? groupMetadata.jid : ''
