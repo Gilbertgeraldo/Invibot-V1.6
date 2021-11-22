@@ -1,12 +1,12 @@
 /*
 }--------------------[✨THANKS TO✨]--------------------{
 --> Rifza_Ganz : Developer 
+--> Wann : Kang Update sc
 --> DecodeDenpa : Izin ambil const kak😅
 --> Donz : Pengembang
 --> Agung : Pengembang
 --> Clara_Chans : Pengembang
 --> Adit : Tukang Nyimak
---> Iwan : Penyedia Api
 --> Penyedia Api
 
 Thanks To pembuat Rest Api
@@ -3990,7 +3990,7 @@ case 'kodenuklir':
      //{buttonId: `${prefix}file`, buttonText: {displayText: 'LIST FILE CHEAT'}, type: 1},
     //{buttonId: `${prefix}jamu`, buttonText: {displayText: 'LIST JAMU CHEAT'}, type: 1},
    ]
-    imageMsg = (await rifza.prepareMessageMedia(fs.readFileSync(`./media/Menu.jpg`), 'imageMessage', { thumbnail:Bfake, contextInfo:{forwardingScore: 989, isForwarded: true }})).imageMessage
+    imageMsg = (await rifza.prepareMessageMedia(fs.readFileSync(`./gambar/menu.jpg`), 'imageMessage', { thumbnail:Bfake, contextInfo:{forwardingScore: 989, isForwarded: true }})).imageMessage
     
     buttonsMessage = {
     contentText: `${menu}`,
