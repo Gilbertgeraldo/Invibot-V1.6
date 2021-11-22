@@ -48,7 +48,8 @@ const starts = async (rifza = new WAConnection()) => {
 		whitespaceBreak: false
 
 	}), 'cyan'))
-    rifza.browserDescription = [ 'XMOODS', 'Aloha', '5.4' ]
+    
+      rifza.browserDescription = ['Developer Invi X XMOODS', 'SAFARI', '8.1']
     
     rifza.on('qr', () => {
         console.log(color('[','white'), color('!','red'), color(']','white'), color(' Scan bang'))
