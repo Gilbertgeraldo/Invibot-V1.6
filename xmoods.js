@@ -97,8 +97,8 @@ ky_ttt = []
 tttawal= ["0️⃣","1️⃣","2️⃣","3️⃣","4️⃣","5️⃣","6️⃣","7️⃣","8️⃣","9️⃣"]
 let control = JSON.parse(fs.readFileSync('./control.json'))
 banChats = false;
-
-targetpc = control.NomorOwner
+ownerNumber = control.NomorOwner
+targetpc = control.NomorOwner2
 owner = targetpc
 za_api = "ApiRifzaBot"
 LolApi = "WannOff" //Ganti sama Api lu
@@ -6168,15 +6168,15 @@ case 'antilinkyt':
                                              if (isAntiLinkytv) return reply('anti link YouTube video sudah aktif')
                                              antilinkytv.push(from)
                                              fs.writeFileSync('./database/group/antilinkyt.json', JSON.stringify(antilinkytv))
-                                             reply('Sukses mengaktifkan anti link YouTube di group ini ✔️')
+                                             floc('Sukses mengaktifkan anti link YouTube di group ini ✔️')
                                              rifza.sendMessage(from,`「 *NOTICE GROUP* 」Jika bukan admin jangan kirim link YouTube Video`, text)
                                       } else if (Number(args[0]) === 0) {
                                              if (isAntiLinkytv) return reply('Mode anti link YouTube video sudah Mati')
                                              antilinkytv.splice(from, 1)
                                              fs.writeFileSync('./database/group/antilinkyt.json', JSON.stringify(antilinkytv))
-                                             reply('Sukes menonaktifkan anti link YouTube video di group ini ✔️')
+                                             floc('Sukes menonaktifkan anti link YouTube video di group ini ✔️')
                                       } else {
-                                             reply('1 untuk mengaktifkan, 0 untuk menonaktifkan')
+                                             floc('1 untuk mengaktifkan, 0 untuk menonaktifkan')
                                       }
                                       break    
 //==================================================================================
@@ -6190,15 +6190,15 @@ case 'antilinkyoutube':
                                              if (isAntiLinkytc) return reply('anti link YouTube channel sudah aktif')
                                              antilinkytc.push(from)
                                              fs.writeFileSync('./database/group/antilinkytchannel.json', JSON.stringify(antilinkytc))
-                                             reply('Sukses mengaktifkan anti link YouTube channel di group ini ✔️')
+                                             floc('Sukses mengaktifkan anti link YouTube channel di group ini ✔️')
                                              rifza.sendMessage(from,`「 *NOTICE GROUP* 」Jika bukan admin jangan kirim link YouTube Channel`, text)
                                       } else if (Number(args[0]) === 0) {
                                              if (isAntiLinkytc) return reply('Mode anti link YouTube channel sudah Mati')
                                              antilinkytc.splice(from, 1)
                                              fs.writeFileSync('./database/group/antilinkytchannel.json', JSON.stringify(antilinkytc))
-                                             reply('Sukes menonaktifkan anti link YouuTube channel di group ini ✔️')
+                                             floc('Sukes menonaktifkan anti link YouuTube channel di group ini ✔️')
                                       } else {
-                                             reply('1 untuk mengaktifkan, 0 untuk menonaktifkan')
+                                             floc('1 untuk mengaktifkan, 0 untuk menonaktifkan')
                                       }
                                       break
 //==================================================================================
@@ -6212,15 +6212,15 @@ case 'antilinkinstagram':
                                              if (isAntiLinkig) return reply('UDAH NYALA KAK')
                                              antilinkig.push(from)
                                              fs.writeFileSync('./database/group/antilinkig.json', JSON.stringify(antilinkig))
-                                             reply('SUKSES MENGAKTIFKAN ANTI LINK INSTAGRAM')
+                                             floc('SUKSES MENGAKTIFKAN ANTI LINK INSTAGRAM')
                                              rifza.sendMessage(from,`「 *NOTICE GROUP* 」Jika bukan admin jangan kirim link IG`, text)
                                       } else if (Number(args[0]) === 0) {
                                              if (!isAntiLinkig) return reply('1 untuk mengaktifkan, 0 untuk menonaktifkan')
                                              antilinkig.splice(from, 1)
                                              fs.writeFileSync('./database/group/antilinkig.json', JSON.stringify(antilinkig))
-                                             reply('SUKSES MEMATIKAN ANTI LINK IG DI GROUP')
+                                             floc('SUKSES MEMATIKAN ANTI LINK IG DI GROUP')
                                       } else {
-                                             reply('1 untuk mengaktifkan, 0 untuk menonaktifkan')
+                                             floc('1 untuk mengaktifkan, 0 untuk menonaktifkan')
                                       }
                                       break
 //==================================================================================
@@ -6234,14 +6234,14 @@ case 'antilinktelegram':
                                      if (isAntiLinkTelegram) return reply('*SUDAH DI AKTIFKAN SEBELUMNYA*')
                                             antitelegram.push(from)
                                             fs.writeFileSync('./database/group/antilinktelegram.json', JSON.stringify(antitelegram))
-                                            reply('「 *TELEGRAM DETECTOR* 」 PERINTAH DITERIMA, ANTI LINK TELEGRAM SUDAH ENABLE!')
+                                            floc('「 *TELEGRAM DETECTOR* 」 PERINTAH DITERIMA, ANTI LINK TELEGRAM SUDAH ENABLE!')
                                             rifza.sendMessage(from,`「 *NOTICE GROUP* 」Jika bukan admin jangan kirim link Telegram! Jika Anda Kirim Maka Bot Akan Mengeluarkanmu.`, text)
                                      } else if (args[0] === '0') {
                                             antitelegram.splice(from, 1)
                                             fs.writeFileSync('./database/group/antilinktelegram.json', JSON.stringify(antitelegram))
-                                            reply('「 *TELEGRAM DETECTOR* 」 PERINTAH DI TERIMA, ANTI LINK TELEGRAM SUDAH DISABLE!')
+                                            floc('「 *TELEGRAM DETECTOR* 」 PERINTAH DI TERIMA, ANTI LINK TELEGRAM SUDAH DISABLE!')
                                      } else {
-                                            reply('enable untuk mengaktifkan, disable untuk menonaktifkan')
+                                            floc('enable untuk mengaktifkan, disable untuk menonaktifkan')
                                      }
                                      break
 //==================================================================================
@@ -6255,14 +6255,14 @@ case 'antilinkfacebook':
                                       if (isAntiLinkfb) return reply('*SUDAH DI AKTIFKAN SEBELUMNYA*')
                                       antilinkfb.push(from)
                                              fs.writeFileSync('./database/group/antilinkfb.json', JSON.stringify(antilinkfb))
-                                             reply('「 *Facebook DETECTOR* 」 PERINTAH DITERIMA, ANTI LINK Facebook SUDAH ENABLE!')
+                                             floc('「 *Facebook DETECTOR* 」 PERINTAH DITERIMA, ANTI LINK Facebook SUDAH ENABLE!')
                                              rifza.sendMessage(from,`「 *NOTICE GROUP* 」Jika bukan admin jangan kirim link Telegram! Jika Anda Kirim Maka Bot Akan Mengeluarkanmu.`, text)
                                       } else if (args[0] === '0') {
                                              antilinkfb.splice(from, 1)
                                              fs.writeFileSync('./database/group/antilinkfb.json', JSON.stringify(antilinkfb))
-                                             reply('「 *Facebook DETECTOR* 」 PERINTAH DI TERIMA, ANTI LINK Facebook SUDAH DISABLE!')
+                                             floc('「 *Facebook DETECTOR* 」 PERINTAH DI TERIMA, ANTI LINK Facebook SUDAH DISABLE!')
                                       } else {
-                                             reply('enable untuk mengaktifkan, disable untuk menonaktifkan')
+                                             floc('enable untuk mengaktifkan, disable untuk menonaktifkan')
                                       }
                                       break
                                       
@@ -6276,14 +6276,14 @@ case 'antilinkfacebook':
                                       if (isAntiLinkmediafire) return reply('*SUDAH DI AKTIFKAN SEBELUMNYA*')
                                       antilinkmediafire.push(from)
                                              fs.writeFileSync('./database/group/antilinkmediafire.json', JSON.stringify(antilinkmediafire))
-                                             reply('「 *Media Fire DETECTOR* 」 PERINTAH DITERIMA, ANTI LINK MEDIAFIRE SUDAH ENABLE!')
+                                             floc('「 *Media Fire DETECTOR* 」 PERINTAH DITERIMA, ANTI LINK MEDIAFIRE SUDAH ENABLE!')
                                              rifza.sendMessage(from,`「 *NOTICE GROUP* 」Jika bukan admin jangan kirim link MediaFire! Jika Anda Kirim Maka Bot Akan Mengeluarkanmu.`, text)
                                       } else if (args[0] === '0') {
                                              antilinkmediafire.splice(from, 1)
                                              fs.writeFileSync('./database/group/antilinkmediafire.json', JSON.stringify(antilinkmediafire))
-                                             reply('「 *Facebook DETECTOR* 」 PERINTAH DI TERIMA, ANTI LINK MEDIA FIRE SUDAH DISABLE!')
+                                             floc('「 *Facebook DETECTOR* 」 PERINTAH DI TERIMA, ANTI LINK MEDIA FIRE SUDAH DISABLE!')
                                       } else {
-                                             reply('enable untuk mengaktifkan, disable untuk menonaktifkan')
+                                             floc('enable untuk mengaktifkan, disable untuk menonaktifkan')
                                       }
                                       break
      
@@ -6657,7 +6657,7 @@ bc = await rifza.downloadMediaMessage(encmedia)
 for (let _ of anu) {
 rifza.sendMessage(_.jid, bc, image, {quoted:ftroli,caption: `*「 BROADCAST [ • XMOODS • ] 」*\n\n${body.slice(4)}`})
 }
-reply('Suksess broadcast')
+floc('Suksess broadcast')
 } else {
 for (let _ of anu) {
 sendMess(_.jid, `*「 XMOODS BROADCAST 」*\n\n${body.slice(4)}`)
@@ -7728,7 +7728,7 @@ if (isBanchat) return
 				contextInfo: { mentionedJid: [nomor] }
 				}
 				rifza.groupSettingChange (from, GroupSettingChange.messageSend, true);
-				reply(close)
+				floc(close)
 				}, timer)
 				break 
 case 'opentime'://====Dari Pena bot=====\\  
@@ -7737,7 +7737,7 @@ if (isBanchat) return
 		     	if (!isBotGroupAdmins) return reply("Bot not admin");
         if (!isGroupAdmins && !riff.key.fromMe) return reply("Khusus admin");
         if (!isGroup) return reply("Khusus di grup");		    
-                reply("AKSES WAKTU DIPROSES")   
+                floc("AKSES WAKTU DIPROSES")   
                 rifza.updatePresence(from, Presence.composing) 
                 if (args[1]=="detik") {var timer = args[0]+"000"
 				} else if (args[1]=="menit") {var timer = args[0]+"00000"
@@ -7750,7 +7750,7 @@ if (isBanchat) return
 				contextInfo: { mentionedJid: [nomor] }
 				}
 				rifza.groupSettingChange (from, GroupSettingChange.messageSend, false);
-				reply(open)
+				floc(open)
 				}, timer)
 				break
 case 'linkwa':
@@ -7789,7 +7789,7 @@ if (isBanchat) return
 case 'runtime':
 if (isBanned) return reply(mess.ban)
 if (isBanchat) return
-textImg(`${runtime(process.uptime())}`)
+floc(`${runtime(process.uptime())}`)
 break       
 case 'ping':
 case 'speed':
@@ -7797,7 +7797,7 @@ if (isBanned) return reply(mess.ban)
 if (isBanchat) return              
 timestampe = speed();
 latensie = speed() - timestampe
-reply(`「 *[ • XMOODS • ]* 」\n //==[${latensie.toFixed(4)} detik 💬]==\\`)
+floc(`「 *[ • XMOODS • ]* 」\n //==[${latensie.toFixed(4)} detik 💬]==\\`)
 break
 case 'gachacecan':
 if (isBanned) return reply(mess.ban)
