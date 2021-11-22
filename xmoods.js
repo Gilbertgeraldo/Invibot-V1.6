@@ -250,8 +250,10 @@ module.exports = rifza = async (rifza, riff) => {
         const q = args.join(' ')
         const Rfake = fs.readFileSync ('./gambar/thumb.jpg','base64')
   
-        const botNumber = rifza.user.jid
-        const ownerNumber = control.NomorOwner
+        const botNumber = rifza.user.ji
+	const ownerNumber = [`${targetpc}@s.whatsapp.net`]
+		const ownerNumberr = `${targetpc}@s.whatsapp.net`
+        const isOwner = ownerNumber.includes(senderr)
 		const ownerName = control.NamaOwner
 		const botName = control.NamaBot
 		const isGroup = from.endsWith('@g.us')
