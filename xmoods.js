@@ -447,7 +447,7 @@ rifza.sendMessage(from, url, "videoMessage", {mimetype: "video/gif", filename: "
           sendEphemeral: false,
           "externalAdReply": {
           "title": `hai kak${pushname}👋` ,
-          "body": `${date}`,
+          "body": `${time2}`,
           "mediaType": "2",
           "thumbnailUrl": "https://c.top4top.io/p_2087f30hj.jpeg",
           "mediaUrl": "https://youtu.be/gk-Sg-ntHSU",
@@ -3381,7 +3381,7 @@ if (!isGroup) return reply('ONLY GRUP')
 
 
 
-  .then((res) => fakegroup('https://chat.whatsapp.com/' + res))
+  .then((res) => fakeitem('https://chat.whatsapp.com/' + res))
 
 
 
