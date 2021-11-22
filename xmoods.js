@@ -1178,7 +1178,7 @@ if (isSimi) {
 
 //--------------------[AUTO BIO]--------------------\\
 runt = process.uptime() 
-           rifza.setStatus(`Aktif Selama : ${kyun(runt)} | Hostname : ${os.hostname()} | Speed : ${latensie.toFixed(4)}   `).catch((_)=>_);
+           rifza.setStatus(`Aktif Selama : ${kyun(runt)} | Hostname : ${os.hostname()}    `).catch((_)=>_);
 
            settingstatus = new Date() * 1;            
 //--------------------[AUTO BIO]--------------------\\
