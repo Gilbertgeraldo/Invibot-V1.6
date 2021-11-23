@@ -1366,7 +1366,7 @@ if (isBanchat) return
               totalChat = await rifza.chats.all()
               latensie = speed() - timestampe
               total = math(`${groups.length}*${privat.length}`)
-              
+             stod = `${sender}` 
         menu =`[ • INVIBOTS • ]
 ┏━━⬣ *BOT INFO*
 ┃
@@ -1512,7 +1512,7 @@ if (isBanchat) return
               totalChat = await rifza.chats.all()
               latensie = speed() - timestampe
               total = math(`${groups.length}*${privat.length}`)
-              
+              stod = `${sender}`
         
                menu =`----------[INVI-BOT]-----------
  ┃⬡Group Menu⬡┃
@@ -1579,7 +1579,7 @@ case 'cekmenu':
         case 'menucek':
 if (isBanned) return reply(mess.ban)
 if (isBanchat) return
-        
+    stod = `${sender}`    
               groups = rifza.chats.array.filter(v => v.jid.endsWith('g.us'))
               privat = rifza.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
               ram2 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
@@ -1632,7 +1632,7 @@ case 'gamemenu':
         case 'menugame':
 if (isBanned) return reply(mess.ban)
 if (isBanchat) return
-        
+     stod = `${sender}`   
               groups = rifza.chats.array.filter(v => v.jid.endsWith('g.us'))
               privat = rifza.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
               ram2 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
@@ -1670,7 +1670,7 @@ break
         case 'menuasupan':
 if (isBanned) return reply(mess.ban)
 if (isBanchat) return
-        
+        stod = `${sender}`
               groups = rifza.chats.array.filter(v => v.jid.endsWith('g.us'))
               privat = rifza.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
               ram2 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
@@ -1708,7 +1708,7 @@ case 'downloadmenu':
         case 'menudownload':
 if (isBanned) return reply(mess.ban)
 if (isBanchat) return
-        
+        stod = `${sender}`
               groups = rifza.chats.array.filter(v => v.jid.endsWith('g.us'))
               privat = rifza.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
               ram2 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
@@ -1754,7 +1754,7 @@ break
         case 'menuanime':
 if (isBanned) return reply(mess.ban)
 if (isBanchat) return
-        
+       stod = `${sender}` 
               groups = rifza.chats.array.filter(v => v.jid.endsWith('g.us'))
               privat = rifza.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
               ram2 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
@@ -1821,7 +1821,7 @@ timestampe = speed();
 totalChat = await rifza.chats.all()
 latensie = speed() - timestampe
 total = math(`${groups.length}*${privat.length}`)
-              
+   stod = `${sender}`           
         
                menu =`----------[INVI-BOT]-----------
  ⬡Owner Menu⬡
@@ -1877,7 +1877,7 @@ timestampe = speed();
 totalChat = await rifza.chats.all()
 latensie = speed() - timestampe
 total = math(`${groups.length}*${privat.length}`)
-              
+  stod = `${sender}`            
         
                menu =`----------[INVI-BOT]-----------
 ┃⬡Storage Menu⬡┃
@@ -1902,7 +1902,8 @@ break
  case 'primbonmenu':
 case 'menuprimbon':
 if (isBanned) return reply(mess.ban)
-if (isBanchat) return        
+if (isBanchat) return    
+  stod = `${sender}`  
 groups = rifza.chats.array.filter(v => v.jid.endsWith('g.us'))
 privat = rifza.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
 ram2 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
@@ -1941,7 +1942,7 @@ case 'makermenu':
         case 'menumaker':
 if (isBanned) return reply(mess.ban)
 if (isBanchat) return
-        
+      stod = `${sender}`  
               groups = rifza.chats.array.filter(v => v.jid.endsWith('g.us'))
               privat = rifza.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
               ram2 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
@@ -2016,7 +2017,7 @@ case 'othermenu':
         case 'menuother':
 if (isBanned) return reply(mess.ban)
 if (isBanchat) return
-        
+     stod = `${sender}`   
               groups = rifza.chats.array.filter(v => v.jid.endsWith('g.us'))
               privat = rifza.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
               ram2 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
@@ -2079,7 +2080,8 @@ break
 case 'funmenu':
 case 'menufun':
 if (isBanned) return reply(mess.ban)
-if (isBanchat) return        
+if (isBanchat) return 
+   stod = `${sender}`    
               groups = rifza.chats.array.filter(v => v.jid.endsWith('g.us'))
               privat = rifza.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
               ram2 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
@@ -2226,7 +2228,7 @@ if (isBanchat) return
               totalChat = await rifza.chats.all()
               latensie = speed() - timestampe
               total = math(`${groups.length}*${privat.length}`)
-              
+        stod = `${sender}`      
         
                menu =`----------[INVI-BOT]-----------
 
@@ -2264,7 +2266,7 @@ if (isBanchat) return
               totalChat = await rifza.chats.all()
               latensie = speed() - timestampe
               total = math(`${groups.length}*${privat.length}`)
-              
+       stod = `${sender}`       
         
                menu =`----------[INVI-BOT]-----------
 
