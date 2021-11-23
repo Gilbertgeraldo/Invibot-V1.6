@@ -7314,14 +7314,15 @@ if (isBanchat) return
 case 'runtime':
 if (isBanned) return reply(mess.ban)
 if (isBanchat) return
-fakeyt (`${runtime(process.uptime())}`)   
+fakeyt (`${runtime(process.uptime())}`)
+ break
 case 'ping':
 case 'speed':
 if (isBanned) return reply(mess.ban)
 if (isBanchat) return              
 timestampe = speed();
 latensie = speed() - timestampe
-fakegroup (`「 *[ • XMOODS • ]* 」\n //==[${latensie.toFixed(4)} detik 💬]==\\`)
+fakeitem (`「 *[ • XMOODS • ]* 」\n //==[${latensie.toFixed(4)} detik 💬]==\\`)
 break
 case 'gachacecan':
 if (isBanned) return reply(mess.ban)
