@@ -823,7 +823,7 @@ if (isGroup && isAutoSticker) {
 			if (riff.message && riff.message.imageMessage) {
 							const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(riff).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : riff
 							const media = await rifza.downloadAndSaveMediaMessage(encmedia)
-							sendSticker(from, media)
+							sendStickerUrl(from, media)
 			}
 		}
 //--------------------[LEVELING]--------------------\\
