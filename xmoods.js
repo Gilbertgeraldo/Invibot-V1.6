@@ -1383,10 +1383,6 @@ if (isBanchat) return
 ┃⬡ Me : _${mek.key.fromMe ? 'True' : 'False'}_
 ┃⬡ Owner : _${isOwner ? 'True' : `False`}_
 ┃⬡ CoOwner : _${isCoOwner ? 'True' : `False`}_
-┗⬣
-`,
-
-memek =  `
 
 ┃⬡GRUB TOTAL = ${groups.length}
 ┃⬡PRIBADI CHAT = ${privat.length}
@@ -1395,9 +1391,10 @@ memek =  `
 ┃⬡KECEPATAN = ${latensie.toFixed(4)} _Detik_
 ┃⬡AKTIF : ${runtime(process.uptime())}
 ┃⬡PLATFORM = ${os.platform()}
+┗⬣
 
 ©Created by Wann`
-sendButDocument(from, `${menu}`, `${memek}, fs.readFileSync('./gambar/RIFZA'), {mimetype:Mimetype.pdf, thumbnail:fs.readFileSync('./gambar/thumb.jpg'), filename:`${jmn} - ${week} - ${calender}`}, [{buttonId:`menu`,buttonText:{displayText:'Menu YT'},type:1},{buttonId:`menu2`,buttonText:{displayText:'Menu IG'},type:1},{buttonId:`Menu3`,buttonText:{displayText:'Menu PDF'},type:1}], {quoted:riff, contextInfo: { mentionedJid: [dtod,otod,stod], forwardingScore: 508, isForwarded: true, externalAdReply:{title:`Hy ${pushname}`,body:`*click here to play music`,mediaType:"2",thumbnail:ofrply,mediaUrl:`https://youtu.be/g0lQESej9zc`}}})
+sendButDocument(from, `${menu}`, "© INVIBOT", fs.readFileSync('./gambar/RIFZA'), {mimetype:Mimetype.pdf, thumbnail:fs.readFileSync('./gambar/thumb.jpg'), filename:`${jmn} - ${week} - ${calender}`}, [{buttonId:`menu`,buttonText:{displayText:'Menu YT'},type:1},{buttonId:`menu2`,buttonText:{displayText:'Menu IG'},type:1},{buttonId:`Menu3`,buttonText:{displayText:'Menu PDF'},type:1}], {quoted:riff, contextInfo: { mentionedJid: [dtod,otod,stod], forwardingScore: 508, isForwarded: true, externalAdReply:{title:`Hy ${pushname}`,body:`*click here to play music`,mediaType:"2",thumbnail:ofrply,mediaUrl:`https://youtu.be/g0lQESej9zc`}}})
 break      
 case 'command':
 if (isBanned) return reply(mess.ban)
