@@ -1380,7 +1380,7 @@ if (isBanchat) return
 ┃
 ┃⬡ Name : _${pushname}_
 ┃⬡ Nomor : _@${sender.split('@')[0]}_
-┃⬡ Me : _${mek.key.fromMe ? 'True' : 'False'}_
+┃⬡ Me : _${riff.key.fromMe ? 'True' : 'False'}_
 ┃⬡ Owner : _${isOwner ? 'True' : `False`}_
 ┃⬡ CoOwner : _${isCoOwner ? 'True' : `False`}_
 
