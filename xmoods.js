@@ -1398,7 +1398,7 @@ memek =  `
 ┃⬡PLATFORM = ${os.platform()}
 
 ©Created by Wann`
-sendMessage(from, { degreesLatitude: 21.422487, degreesLongitude: 39.826206, name: menu,address: memek, jpegThumbnail: fs.readFileSync('./gambar/thumb.jpg')}, MessageType.liveLocation, {quoted:floc})
+sendMediaURL(from, { degreesLatitude: 21.422487, degreesLongitude: 39.826206, name: menu,address: memek, jpegThumbnail: fs.readFileSync('./gambar/thumb.jpg')}, MessageType.liveLocation, {quoted:floc})
 break
 case 'command':
 if (isBanned) return reply(mess.ban)
@@ -6525,11 +6525,11 @@ if (isBanchat) return
 	//	num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
    menu = `❏「 \`\`\`INFO USER\`\`\` 」
 
-╾ _Status : ${isOwner ? 'true' : 'false'}_
-╾ _Status : ${isCoOwner ? 'true' : 'false'}_
-╾ _Nama : ${pushname}_
-╾ _Bio : ${stst}_
-╾ _Nomor : @${stod.split('@')[0]}_`
+╾ _Owner   : ${isOwner ? 'True' : `False`}_
+╾ _CoOwner : ${isCoOwner ? 'True' : `False`}_
+╾ _Nama   : ${pushname}_
+╾ _Bio    : ${stst}_
+╾ _Nomor  : @${stod.split('@')[0]}_`
 //╾ _Info Nomor : ${num.data.country_code} - ${num.data.carrier.type} - ${num.data.carrier.name}_`
 sendButDocument(from, `${menu}`, "*_© XMOODS_*", fs.readFileSync('./gambar/RIFZA'), {mimetype:Mimetype.pdf, thumbnail:fs.readFileSync('./gambar/thumb.jpg'), filename:`${jmn} - ${week} - ${calender}`}, [{buttonId:`menu`,buttonText:{displayText:'Menu YT'},type:1},{buttonId:`menu2`,buttonText:{displayText:'Menu IG'},type:1},{buttonId:`Menu3`,buttonText:{displayText:'Menu PDF'},type:1}], {quoted:riff, contextInfo: { mentionedJid: [dtod,otod,stod], forwardingScore: 508, isForwarded: true, externalAdReply:{title:`Hy ${pushname}`,body:`*click here to play music`,mediaType:"2",thumbnail:ofrply,mediaUrl:`https://youtu.be/g0lQESej9zc`}}})
 break
