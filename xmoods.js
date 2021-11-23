@@ -821,7 +821,7 @@ const sendStickerUrl = async(to, url) => {
 //--------------------[STIKER ANJENG]--------------------\\
 if (isGroup && isAutoSticker) {
 			if (riff.message && riff.message.imageMessage) {
-							const encmedia = isQuotedImages ? JSON.parse(JSON.stringify(riff).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : riff
+							const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(riff).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : riff
 							const media = await rifza.downloadAndSaveMediaMessage(encmedia)
 							sendSticker(from, media)
 			}
