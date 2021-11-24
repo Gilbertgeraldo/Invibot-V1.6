@@ -2852,7 +2852,18 @@ if (isTTT) return reply('Sedang Ada Permainan Di Grub Ini, Harap Tunggu')
   gameAdd(sender, glimit)
 
   break
-
+case 'lighttext': 	
+				if (args.length < 1) return reply(`text mana broh?\ncontoh ${prefix + command} ${pushname}`)
+				wan = args.join(' ')
+			wanntzy = await getBuffer (`https://api.lolhuman.xyz/api/ephoto1/lighttext?apikey=WannOff&text=${wan}`)
+				rifza.sendMessage(from, wanntzy, image, {quoted: freply})
+				break
+				      case 'tololserti': 	
+				if (args.length < 1) return reply(`text mana broh?\ncontoh ${prefix + command} ${pushname}`)
+				wan = args.join(' ')
+			wanntzy = await getBuffer (`https://api.lolhuman.xyz/api/toloserti?apikey=WannOff&name=${wan}`)
+				rifza.sendMessage(from, wanntzy, image, {quoted: freply})
+				break
 
 
 case 'stalkig':
@@ -7898,9 +7909,19 @@ xm2 = jsonData[xm1];
 xm3 = await getBuffer(xm2.result)
 rifza.sendMessage(from, xm3, video, {mimetype: 'video/mp4', filename: `donghua.mp4`, quoted:ftroli, caption: 'Nih Gan'})
 break
+case 'cyber': 	
+				if (args.length < 1) return reply(`text mana broh?\ncontoh ${prefix + command} ${pushname}`)
+				wan = args.join(' ')
+			wanntzy = await getBuffer (`https://api.lolhuman.xyz/api/ephoto1/anonymhacker?apikey=WannOff&text=${wan}`)
+				rifza.sendMessage(from, wanntzy, image, {quoted: freply})
+				break
 
-
-
+case 'logogaming': 	
+				if (args.length < 1) return reply(`text mana broh?\ncontoh ${prefix + command} ${pushname}`)
+				wan = args.join(' ')
+			wanntzy = await getBuffer https://api.lolhuman.xyz/api/ephoto1/logogaming?apikey=WannOff&text=${wan}`)
+				rifza.sendMessage(from, wanntzy, image, {quoted: freply})
+				break
 
 
 
