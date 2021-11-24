@@ -7904,8 +7904,7 @@ case 'cyber':
 				
 				addit = args.join(' ')
 				aditty = await getBuffer(`https://api.lolhuman.xyz/api/ephoto1/anonymhacker?apikey=WannOff&text=${addit}`)
-				sendMediaURL(from, aditty, image, {quoted: freply})
-				
+				rifza.sendMessage(from, aditty, image, {thumbnail: Buffer.alloc(0), caption: `Follow @Wann`, quoted : freply})
 				break
 
 case 'logogaming':
@@ -7915,9 +7914,9 @@ case 'logogaming':
 				
 				addit = args.join(' ')
 				aditty = await getBuffer(`https://api.lolhuman.xyz/api/ephoto1/logogaming?apikey=WannOff&text=${addit}`)
-				sendMediaURL(from, aditty, image, {quoted: freply})
-				
+				rifza.sendMessage(from, aditty, image, {thumbnail: Buffer.alloc(0), caption: `Follow @Wann`, quoted : freply})
 				break
+
 case 'lightext':
                 //[❗] Fix Eror By Wann
 				
@@ -7925,8 +7924,7 @@ case 'lightext':
 				
 				addit = args.join(' ')
 				aditty = await getBuffer(`https://api.lolhuman.xyz/api/ephoto1/lighttext?apikey=WannOff&text=${addit}`)
-				sendMediaURL(from, aditty, image, {quoted: freply})
-				
+				 rifza.sendMessage(from, aditty, image, {thumbnail: Buffer.alloc(0), caption: `Follow @Wann`, quoted : freply})
 				break
 case 'tololserti':
                 //[❗] Fix Eror By Wann
@@ -7935,8 +7933,7 @@ case 'tololserti':
 				
 				addit = args.join(' ')
 				aditty = await getBuffer(`https://api.lolhuman.xyz/api/toloserti?apikey=WannOff&name=${addit}`)
-				sendMediaURL(from, aditty, image, {quoted: freply})
-				
+				rifza.sendMessage(from, aditty, image, {thumbnail: Buffer.alloc(0), caption: `Follow @Wann`, quoted : freply})
 				break
 
 case 'love':
@@ -7946,9 +7943,8 @@ if(!q)return reply(`Example : ${prefix + command} XMOODS`)
 reply(mess.wait)
 alam = await fetchJson(`https://api.lolhuman.xyz/api/photooxy1/love?apikey=apikey=WannOff&text=${q}`)
 alam2 = await getBuffer(alam.result.url)
-rifza.sendMessage(from, alam2, image, {quoted:riff,caption:`${q}`,thumbnail:Rfake})
-break
-
+rifza.sendMessage(from, alam2, image, {thumbnail: Buffer.alloc(0), caption: `Follow @Wann`, quoted : freply})
+				break
 
 
 
