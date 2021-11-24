@@ -7904,7 +7904,7 @@ case 'cyber':
 				
 				addit = args.join(' ')
 				aditty = await getBuffer(`https://api.lolhuman.xyz/api/ephoto1/anonymhacker?apikey=WannOff&text=${addit}`)
-				rifza.sendMessage(from, aditty, image, {quoted: freply})
+				sendMediaURL(from, aditty, image, {quoted: freply})
 				
 				break
 
@@ -7915,7 +7915,7 @@ case 'logogaming':
 				
 				addit = args.join(' ')
 				aditty = await getBuffer(`https://api.lolhuman.xyz/api/ephoto1/logogaming?apikey=WannOff&text=${addit}`)
-				rifza.sendMessage(from, aditty, image, {quoted: freply})
+				sendMediaURL(from, aditty, image, {quoted: freply})
 				
 				break
 case 'lightext':
@@ -7925,7 +7925,7 @@ case 'lightext':
 				
 				addit = args.join(' ')
 				aditty = await getBuffer(`https://api.lolhuman.xyz/api/ephoto1/lighttext?apikey=WannOff&text=${addit}`)
-				rifza.sendMessage(from, aditty, image, {quoted: freply})
+				sendMediaURL(from, aditty, image, {quoted: freply})
 				
 				break
 case 'tololserti':
@@ -7935,12 +7935,19 @@ case 'tololserti':
 				
 				addit = args.join(' ')
 				aditty = await getBuffer(`https://api.lolhuman.xyz/api/toloserti?apikey=WannOff&name=${addit}`)
-				rifza.sendMessage(from, aditty, image, {quoted: freply})
+				sendMediaURL(from, aditty, image, {quoted: freply})
 				
 				break
 
-
-
+case 'love':
+if (isBanned) return reply(mess.ban)
+if (isBanchat) return
+if(!q)return reply(`Example : ${prefix + command} XMOODS`)
+reply(mess.wait)
+alam = await fetchJson(`https://api.lolhuman.xyz/api/photooxy1/love?apikey=apikey=WannOff&text=${q}`)
+alam2 = await getBuffer(alam.result.url)
+rifza.sendMessage(from, alam2, image, {quoted:riff,caption:`${q}`,thumbnail:Rfake})
+break
 
 
 
