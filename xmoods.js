@@ -2778,7 +2778,7 @@ if (args.length < 1) return reply(`text mana broh?\ncontoh ${prefix + command} $
 				
 				wann = args.join(' ')
 			        wannnxy = await getBuffer(`https://api.lolhuman.xyz/api/photooxy3/bannerlol?apikey=WannOff&text=${wann}`)
-				rifza.sendMessage(from, wannxy, image, {quoted: freply})
+				rifza.sendMessage(from, wannnxy, image, {quoted: freply})
 				
 				break
 
