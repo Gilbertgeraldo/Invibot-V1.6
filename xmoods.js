@@ -2770,7 +2770,7 @@ case 'yugioh':
                desc = get_args[2]
                atk = get_args[3]
                def = get_args[4]
-               ini_buffer = await getBuffer(`https://api.lolhuman.xyz/api/yugioh?apikey=WannOff&img=${img}&title=${title}&desc=${desk}&atk=${atk}&def=${def}`)
+               ini_buffer = await getBuffer(`https://api.lolhuman.xyz/api/yugioh?apikey=WannOff&img=${img}&title=${title}&desc=${desc}&atk=${atk}&def=${def}`)
                await rifza.sendMessage(from, ini_buffer, image, { quoted: freply })
                break
 
