@@ -7903,7 +7903,7 @@ case 'cyber':
 				if (args.length < 1) return reply(`text mana broh?\ncontoh ${prefix + command} ${pushname}`)
 				
 				addit = args.join(' ')
-				aditty = await getBuffer(`https://api.lolhuman.xyz/api/ephoto1/logogaming?apikey=${LolApi}&name=${addit}`)
+				aditty = await getBuffer(`https://api.lolhuman.xyz/api/ephoto1/anonymhacker?apikey=WannOff&text=${addit}`)
 				rifza.sendMessage(from, aditty, image, {quoted: freply})
 				
 				break
@@ -7914,7 +7914,7 @@ case 'logogaming':
 				if (args.length < 1) return reply(`text mana broh?\ncontoh ${prefix + command} ${pushname}`)
 				
 				addit = args.join(' ')
-				aditty = await getBuffer(`https://api.lolhuman.xyz/api/goodgirl?apikey=${LolApi}&name=${addit}`)
+				aditty = await getBuffer(`https://api.lolhuman.xyz/api/ephoto1/logogaming?apikey=WannOff&text=${addit}`)
 				rifza.sendMessage(from, aditty, image, {quoted: freply})
 				
 				break
@@ -7924,7 +7924,7 @@ case 'lightext':
 				if (args.length < 1) return reply(`text mana broh?\ncontoh ${prefix + command} ${pushname}`)
 				
 				addit = args.join(' ')
-				aditty = await getBuffer(`https://api.lolhuman.xyz/api/ephoto1/lighttext?apikey=${LolApi}&name=${addit}`)
+				aditty = await getBuffer(`https://api.lolhuman.xyz/api/ephoto1/lighttext?apikey=WannOff&text=${addit}`)
 				rifza.sendMessage(from, aditty, image, {quoted: freply})
 				
 				break
@@ -7934,7 +7934,7 @@ case 'tololserti':
 				if (args.length < 1) return reply(`text mana broh?\ncontoh ${prefix + command} ${pushname}`)
 				
 				addit = args.join(' ')
-				aditty = await getBuffer(`https://api.lolhuman.xyz/api/toloserti?apikey=${LolApi}&name=${addit}`)
+				aditty = await getBuffer(`https://api.lolhuman.xyz/api/toloserti?apikey=WannOff&name=${addit}`)
 				rifza.sendMessage(from, aditty, image, {quoted: freply})
 				
 				break
