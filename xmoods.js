@@ -7919,7 +7919,7 @@ case 'cyber':
 case 'logogaming': 	
 				if (args.length < 1) return reply(`text mana broh?\ncontoh ${prefix + command} ${pushname}`)
 				wan = args.join(' ')
-			wanntzy = await getBuffer https://api.lolhuman.xyz/api/ephoto1/logogaming?apikey=WannOff&text=${wan}`)
+			wanntzy = await getBuffer (`https://api.lolhuman.xyz/api/ephoto1/logogaming?apikey=WannOff&text=${wan}`)
 				rifza.sendMessage(from, wanntzy, image, {quoted: freply})
 				break
 
