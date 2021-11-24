@@ -2770,9 +2770,18 @@ case 'yugioh':
                desc = get_args[2]
                atk = get_args[3]
                def = get_args[4]
-               ini_buffer = await getBuffer(`https://api.lolhuman.xyz/api/yugioh?apikey=WannOff&img=${img}&title=${title}&desc=${desc}&atk=${atk}&def=${def}`)
-               await rifza.sendMessage(from, ini_buffer, image, { quoted: freply })
+               wann = await getBuffer(`https://api.lolhuman.xyz/api/yugioh?apikey=WannOff&img=${img}&title=${title}&desc=${desc}&atk=${atk}&def=${def}`)
+               rifza.sendMessage(from, wann, image, { quoted: freply })
                break
+case 'banner2':
+if (args.length < 1) return reply(`text mana broh?\ncontoh ${prefix + command} ${pushname}`)
+				
+				wann = args.join(' ')
+			        wannnxy = await getBuffer(`https://api.lolhuman.xyz/api/photooxy3/bannerlol?apikey=WannOff&text=${wann}`)
+				rifza.sendMessage(from, wannxy, image, {quoted: freply})
+				
+				break
+
 
   case 'tt':
 if (!q) return reply('Linknya?')
@@ -2883,7 +2892,7 @@ rifza.sendMessage(from, ini_buffer, image, { caption: ini_txt, thumbnail: Buffer
 break
 
 case 'join': 
-if (!isOwner && riff.key.fronMe) return  reply(mess.only.owner)
+if (!isOwner && !riff.key.fronMe) return  reply(mess.only.owner)
  if (!q) return reply('Linknya?')
 if (!isUrl(args[0]) && !args[0].includes('https://chat.whatsapp.com/')) return reply('Linknya Invalid Tod')
   link = args[0].replace('https://chat.whatsapp.com/','')
