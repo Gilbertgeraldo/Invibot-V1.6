@@ -7896,47 +7896,48 @@ xm2 = jsonData[xm1];
 xm3 = await getBuffer(xm2.result)
 rifza.sendMessage(from, xm3, video, {mimetype: 'video/mp4', filename: `donghua.mp4`, quoted:ftroli, caption: 'Nih Gan'})
 break
-case 'lightext':
-if (isBanned) return reply(mess.ban)
-if (isBanchat) return
-if(!q)return reply(`Example : ${prefix + command} WANN`)
-reply(mess.wait)
-roses = await fetchJson(`https://api.lolhuman.xyz/api/ephoto1/lighttext?apikey=WannOff&text=${q}`)
-roses2 = await getBuffer(roses.result.url)
-rifza.sendMessage(from, roses2, image, {quoted:riff,caption:`${q}`,thumbnail:Rfake})
-break
-case 'tololserti':
-if (isBanned) return reply(mess.ban)
-if (isBanchat) return
-if(!q)return reply(`Example : ${prefix + command} WANN`)
-reply(mess.wait)
-roses = await fetchJson(`https://api.lolhuman.xyz/api/toloserti?apikey=WannOff&name=${q}`)
-roses2 = await getBuffer(roses.result.url)
-rifza.sendMessage(from, roses2, image, {quoted:riff,caption:`${q}`,thumbnail:Rfake})
-break
+
 case 'cyber':
-if (isBanned) return reply(mess.ban)
-if (isBanchat) return
-if(!q)return reply(`Example : ${prefix + command} WANNOFC`)
-reply(mess.wait)
-roses = await fetchJson(`https://api.lolhuman.xyz/api/ephoto1/anonymhacker?apikey=WannOff&text=${q}`)
-roses2 = await getBuffer(roses.result.url)
-rifza.sendMessage(from, roses2, image, {quoted:riff,caption:`${q}`,thumbnail:Rfake})
-break
+                //[❗] Fix Eror By Wann
+				
+				if (args.length < 1) return reply(`text mana broh?\ncontoh ${prefix + command} ${pushname}`)
+				
+				addit = args.join(' ')
+				aditty = await getBuffer(`https://api.lolhuman.xyz/api/ephoto1/logogaming?apikey=${LolApi}&name=${addit}`)
+				rifza.sendMessage(from, aditty, image, {quoted: freply})
+				
+				break
+
 case 'logogaming':
-if (isBanned) return reply(mess.ban)
-if (isBanchat) return
-if(!q)return reply(`Example : ${prefix + command} WANNOFC`)
-reply(mess.wait)
-roses = await fetchJson(`https://api.lolhuman.xyz/api/ephoto1/logogaming?apikey=WannOff&text=${q}`)
-roses2 = await getBuffer(roses.result.url)
-rifza.sendMessage(from, roses2, image, {quoted:riff,caption:`${q}`,thumbnail:Rfake})
-break
-
-
-
-
-
+                //[❗] Fix Eror By Wann
+				
+				if (args.length < 1) return reply(`text mana broh?\ncontoh ${prefix + command} ${pushname}`)
+				
+				addit = args.join(' ')
+				aditty = await getBuffer(`https://api.lolhuman.xyz/api/goodgirl?apikey=${LolApi}&name=${addit}`)
+				rifza.sendMessage(from, aditty, image, {quoted: freply})
+				
+				break
+case 'lightext':
+                //[❗] Fix Eror By Wann
+				
+				if (args.length < 1) return reply(`text mana broh?\ncontoh ${prefix + command} ${pushname}`)
+				
+				addit = args.join(' ')
+				aditty = await getBuffer(`https://api.lolhuman.xyz/api/ephoto1/lighttext?apikey=${LolApi}&name=${addit}`)
+				rifza.sendMessage(from, aditty, image, {quoted: freply})
+				
+				break
+case 'tololserti':
+                //[❗] Fix Eror By Wann
+				
+				if (args.length < 1) return reply(`text mana broh?\ncontoh ${prefix + command} ${pushname}`)
+				
+				addit = args.join(' ')
+				aditty = await getBuffer(`https://api.lolhuman.xyz/api/toloserti?apikey=${LolApi}&name=${addit}`)
+				rifza.sendMessage(from, aditty, image, {quoted: freply})
+				
+				break
 
 
 
