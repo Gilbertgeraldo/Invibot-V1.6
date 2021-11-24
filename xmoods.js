@@ -2852,19 +2852,6 @@ if (isTTT) return reply('Sedang Ada Permainan Di Grub Ini, Harap Tunggu')
   gameAdd(sender, glimit)
 
   break
-case 'lighttext': 	
-				if (args.length < 1) return reply(`text mana broh?\ncontoh ${prefix + command} ${pushname}`)
-				wan = args.join(' ')
-			wanntzy = await getBuffer (`https://api.lolhuman.xyz/api/ephoto1/lighttext?apikey=WannOff&text=${wan}`)
-				rifza.sendMessage(from, wanntzy, image, {quoted: freply})
-				break
-				      case 'tololserti': 	
-				if (args.length < 1) return reply(`text mana broh?\ncontoh ${prefix + command} ${pushname}`)
-				wan = args.join(' ')
-			wanntzy = await getBuffer (`https://api.lolhuman.xyz/api/toloserti?apikey=WannOff&name=${wan}`)
-				rifza.sendMessage(from, wanntzy, image, {quoted: freply})
-				break
-
 
 case 'stalkig':
 
@@ -2903,7 +2890,7 @@ rifza.sendMessage(from, ini_buffer, image, { caption: ini_txt, thumbnail: Buffer
 break
 
 case 'join': 
-if (!isOwner && !riff.key.fronMe) return  reply(mess.only.owner)
+if (!isOwner && !riff.key.fromMe) return  reply(mess.only.owner)
  if (!q) return reply('Linknya?')
 if (!isUrl(args[0]) && !args[0].includes('https://chat.whatsapp.com/')) return reply('Linknya Invalid Tod')
   link = args[0].replace('https://chat.whatsapp.com/','')
@@ -7909,20 +7896,42 @@ xm2 = jsonData[xm1];
 xm3 = await getBuffer(xm2.result)
 rifza.sendMessage(from, xm3, video, {mimetype: 'video/mp4', filename: `donghua.mp4`, quoted:ftroli, caption: 'Nih Gan'})
 break
-case 'cyber': 	
-				if (args.length < 1) return reply(`text mana broh?\ncontoh ${prefix + command} ${pushname}`)
-				wan = args.join(' ')
-			wanntzy = await getBuffer ( `https://api.lolhuman.xyz/api/ephoto1/anonymhacker?apikey=WannOff&text=${wan}`)
-				rifza.sendMessage(from, wanntzy, image, {quoted: freply})
-				break
-
-case 'logogaming': 	
-				if (args.length < 1) return reply(`text mana broh?\ncontoh ${prefix + command} ${pushname}`)
-				wan = args.join(' ')
-			wanntzy = await getBuffer (`https://api.lolhuman.xyz/api/ephoto1/logogaming?apikey=WannOff&text=${wan}`)
-				rifza.sendMessage(from, wanntzy, image, {quoted: freply})
-				break
-
+case 'lightext':
+if (isBanned) return reply(mess.ban)
+if (isBanchat) return
+if(!q)return reply(`Example : ${prefix + command} WANN`)
+reply(mess.wait)
+roses = await fetchJson(`https://api.lolhuman.xyz/api/ephoto1/lighttext?apikey=WannOff&text=${q}`)
+roses2 = await getBuffer(roses.result.url)
+rifza.sendMessage(from, roses2, image, {quoted:riff,caption:`${q}`,thumbnail:Rfake})
+break
+case 'tololserti':
+if (isBanned) return reply(mess.ban)
+if (isBanchat) return
+if(!q)return reply(`Example : ${prefix + command} WANN`)
+reply(mess.wait)
+roses = await fetchJson(`https://api.lolhuman.xyz/api/toloserti?apikey=WannOff&name=${q}`)
+roses2 = await getBuffer(roses.result.url)
+rifza.sendMessage(from, roses2, image, {quoted:riff,caption:`${q}`,thumbnail:Rfake})
+break
+case 'cyber':
+if (isBanned) return reply(mess.ban)
+if (isBanchat) return
+if(!q)return reply(`Example : ${prefix + command} WANNOFC`)
+reply(mess.wait)
+roses = await fetchJson(`https://api.lolhuman.xyz/api/ephoto1/anonymhacker?apikey=WannOff&text=${q}`)
+roses2 = await getBuffer(roses.result.url)
+rifza.sendMessage(from, roses2, image, {quoted:riff,caption:`${q}`,thumbnail:Rfake})
+break
+case 'logogaming':
+if (isBanned) return reply(mess.ban)
+if (isBanchat) return
+if(!q)return reply(`Example : ${prefix + command} WANNOFC`)
+reply(mess.wait)
+roses = await fetchJson(`https://api.lolhuman.xyz/api/ephoto1/logogaming?apikey=WannOff&text=${q}`)
+roses2 = await getBuffer(roses.result.url)
+rifza.sendMessage(from, roses2, image, {quoted:riff,caption:`${q}`,thumbnail:Rfake})
+break
 
 
 
