@@ -2761,6 +2761,18 @@ _*Tunggu Proses Upload Media......*_`
           sendFileFromUrl(res[0].link, document, {mimetype: res[0].mime, filename: res[0].nama, quoted: teks})
 
              break
+case 'yugioh':
+  if (!isGroup) return reply(mess.only.group)
+               if (args.length == 0) return reply(`Usage: ${prefix + command} url_image|teks|teks|tanggal|nomor\n\nExample: ${prefix + command} https://telegra.ph/file/2089587ce9afe97f24bf1.jpg|WANN OFC|Developer Bot Wea|24|2021`)
+               get_args = args.join(" ").split("|")
+               img = get_args[0]
+               title = get_args[1]
+               desc = get_args[2]
+               atk = get_args[3]
+               def = get_args[4]
+               ini_buffer = await getBuffer(`https://api.lolhuman.xyz/api/yugioh?apikey=WannOff&img=${img}&title=${title}&desc=${desk}&atk=${atk}&def=${def}`)
+               await rifza.sendMessage(from, ini_buffer, image, { quoted: freply })
+               break
 
   case 'tt':
 if (!q) return reply('Linknya?')
